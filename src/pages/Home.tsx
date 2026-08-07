@@ -6,12 +6,13 @@ import FinalCTA from '../components/FinalCTA';
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <CoreSolutions />
-      <Testimonials />
-      <ReferralRewards />
-      <FinalCTA />
-    </>
+<>
+  <Hero />
+  <AmplifyMethod />
+  <CoreSolutions />
+  <Testimonials />
+  <ReferralRewards />
+  <FinalCTA />
+</>
   );
 }
