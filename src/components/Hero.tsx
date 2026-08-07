@@ -71,9 +71,12 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto flex flex-col items-center"
         >
-          <div className="mb-12 w-full max-w-4xl mx-auto px-4">
-            <Logo variant="large" className="w-full h-auto" />
-          </div>
+        <div className="mb-8 w-full max-w-4xl mx-auto px-4 h-[330px] md:h-[390px] overflow-hidden">
+  <Logo
+    variant="large"
+    className="w-full h-auto object-cover object-top"
+  />
+</div>
 
           <div className="inline-block mb-6 px-4 py-1.5 bg-neutral-100 rounded-full border border-neutral-200">
             <p className="text-sm font-medium tracking-wide text-neutral-600">
