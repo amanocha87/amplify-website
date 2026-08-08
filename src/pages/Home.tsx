@@ -1,3 +1,4 @@
+import AmplifyMethod from '../components/AmplifyMethod';
 import Hero from '../components/Hero';
 import CoreSolutions from '../components/CoreSolutions';
 import Testimonials from '../components/Testimonials';
