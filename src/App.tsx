@@ -15,6 +15,7 @@ import CookiePolicy from './pages/CookiePolicy';
 import TermsConditions from './pages/TermsConditions';
 import Accessibility from './pages/Accessibility';
 import Contact from './pages/Contact';
+import CaseStudies from './pages/CaseStudies';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/terms" element={<TermsConditions />} />
             <Route path="/accessibility" element={<Accessibility />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
           </Routes>
         </main>
         <Footer />
