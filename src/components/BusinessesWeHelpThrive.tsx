@@ -28,7 +28,7 @@ const outcomes = [
     headline: "Stay On The Job",
     copy: "Calls, job details and quotation requests can be captured while you continue working, helping you respond faster without interrupting every appointment.",
     image: professionalTradesperson,
-    link: "/industries/trades"
+   link: "/industries/trades-home-services"
   },
   {
     category: "Restaurants & Hospitality",
@@ -49,7 +49,7 @@ const outcomes = [
     headline: "Focus On Your Clients",
     copy: "Automated booking, confirmations and common-question handling can reduce interruptions while your team gives every client the attention they expect.",
     image: premiumSalon,
-    link: "/industries/hair-beauty-wellness"
+    link: "/industries/hair-beauty"
   }
 ];
 
