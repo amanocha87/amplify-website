@@ -35,7 +35,7 @@ export default function CaseStudies() {
             </span>
 
             <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-              Turning a website conversation into a useful business interaction.
+            Turning website conversations into qualified business opportunities.
             </h2>
 
             <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
@@ -46,16 +46,14 @@ export default function CaseStudies() {
             </p>
 
             <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-              The same approach can be adapted across industries for customer
-              service, sales enquiries, lead qualification and business
-              support.
+              The AI Business Advisor can be adapted around different industries, services and customer journeys — supporting sales enquiries, customer service, lead qualification, appointment journeys and business support while using each organisation’s own knowledge, processes and tone of voice.
             </p>
 
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
               {[
-                'Customer Support',
-                'Lead Qualification',
-                'Sales Guidance',
+                '24/7 Customer Support',
+                'Lead Qualification & Routing',
+                'Sales & Appointment Guidance',
               ].map((item) => (
                 <div
                   key={item}
@@ -148,21 +146,15 @@ export default function CaseStudies() {
             </h2>
 
             <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
-              A lead-management workflow was implemented within a UK-based
-              automotive business to improve how incoming sales enquiries were
-              prioritised and followed up.
+              For a UK-based automotive business, we implemented an automated lead-management workflow to help the sales team respond to incoming enquiries more consistently and prioritise the strongest opportunities.
             </p>
 
             <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-              Enquiries could be categorised as Hot, Warm or Cold, allowing the
-              appropriate email follow-up and next action to be triggered while
-              helping the sales team concentrate attention on stronger
-              opportunities.
+              Incoming enquiries are assessed and categorised as Hot, Warm or Cold based on their level of interest and intent. The workflow then triggers the appropriate email response and next action, helping the sales team prioritise high-intent opportunities while ensuring warm and colder leads continue to receive relevant follow-up.
             </p>
 
             <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-              It's a straightforward example of automation supporting the sales
-              process rather than replacing the people within it.
+             The result is a more structured sales process: faster and more consistent follow-up, clearer lead prioritisation and less repetitive administration — while keeping the sales team in control of the conversations and opportunities that need a human touch.
             </p>
           </motion.div>
         </div>
