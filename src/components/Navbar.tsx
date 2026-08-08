@@ -36,6 +36,9 @@ export default function Navbar() {
           </div>
           <Link to="/industries" className="hover:text-neutral-900 transition-colors">Industries</Link>
           <Link to="/insights" className="hover:text-neutral-900 transition-colors">Insights</Link>
+          <Link to="/case-studies" className="hover:text-neutral-900 transition-colors">
+  Case Studies
+</Link>
           <Link to="/about" className="hover:text-neutral-900 transition-colors">About</Link>
           <Link to="/contact" className="bg-neutral-900 text-white px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">
             Book a Review
