@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import premiumCarDealership from '../assets/images/premium_car_dealership_1785884612958.jpg';
 import estateAgency from '../assets/images/estate_agency_v3_1785885823027.jpg';
 import premiumShowroom from '../assets/images/premium_furniture_showroom_1785885189959.jpg';
@@ -13,42 +14,42 @@ const outcomes = [
     headline: "Never Miss Another Enquiry",
     copy: "An AI receptionist can answer calls, capture customer details and book appointments while your showroom team welcomes visitors, demonstrates vehicles and focuses on converting enquiries into sales.",
     image: premiumCarDealership,
-    link: "#motor-trade"
+    link: "/industries/motor-trade"
   },
   {
     category: "Estate Agencies",
     headline: "Every Opportunity Captured",
     copy: "Automated enquiry handling, appointment booking and CRM updates can reduce administration while your negotiators focus on valuations, viewings and winning instructions.",
     image: estateAgency,
-    link: "#estate-agencies"
+    link: "/industries/estate-agencies"
   },
   {
     category: "Trades & Field Services",
     headline: "Stay On The Job",
     copy: "Calls, job details and quotation requests can be captured while you continue working, helping you respond faster without interrupting every appointment.",
     image: professionalTradesperson,
-    link: "#trades"
+    link: "/industries/trades"
   },
   {
     category: "Restaurants & Hospitality",
     headline: "Focus On Your Guests",
     copy: "Bookings and routine customer questions can be handled while your team concentrates on delivering excellent food, service and memorable experiences.",
     image: busyRestaurant,
-    link: "#hospitality"
+    link: "/industries/hospitality"
   },
   {
     category: "Retail & Showrooms",
     headline: "Give Every Customer Your Attention",
     copy: "AI and automation can respond to routine online and telephone enquiries while your sales team provides personal advice and creates a stronger buying experience.",
     image: premiumShowroom,
-    link: "#retail"
+    link: "/industries/retail"
   },
   {
     category: "Hair, Beauty & Wellness",
     headline: "Focus On Your Clients",
     copy: "Automated booking, confirmations and common-question handling can reduce interruptions while your team gives every client the attention they expect.",
     image: premiumSalon,
-    link: "#wellness"
+    link: "/industries/hair-beauty-wellness"
   }
 ];
 
@@ -94,13 +95,13 @@ export default function BusinessesWeHelpThrive() {
               </p>
               
               <div>
-                <a 
-                  href={outcome.link}
-                  className="inline-flex items-center gap-2 text-neutral-900 font-medium border-b border-neutral-900 pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors"
-                >
-                  Explore the Opportunity
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </a>
+               <Link
+  to={outcome.link}
+  className="inline-flex items-center gap-2 text-neutral-900 font-medium border-b border-neutral-900 pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors"
+>
+  Explore the Opportunity
+  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+</Link>
               </div>
             </div>
           </motion.div>
