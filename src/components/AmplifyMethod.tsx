@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const stages = [
@@ -63,10 +64,10 @@ export default function AmplifyMethod() {
       </div>
 
       <div className="mt-20 text-center">
-        <button className="px-8 py-4 bg-white border border-neutral-200 text-neutral-900 rounded-full font-medium hover:bg-neutral-50 hover:border-neutral-300 transition-colors inline-flex items-center gap-2 text-lg">
-          Discover Our Process
-          <ArrowRight className="w-5 h-5" />
-        </button>
+        <Link to="/about" className="px-8 py-4 bg-white border border-neutral-200 text-neutral-900 rounded-full font-medium hover:bg-neutral-50 hover:border-neutral-300 transition-colors inline-flex items-center gap-2 text-lg">
+  Discover Our Process
+  <ArrowRight className="w-5 h-5" />
+</Link>
       </div>
     </section>
   );
