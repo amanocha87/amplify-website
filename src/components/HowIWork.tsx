@@ -7,12 +7,11 @@ const steps = [
   {
     label: "ADAPT",
     heading: "Turn gaps into better ways of working",
-    copy: "I design practical AI and automation around your existing people, processes and customers — not a generic template. The solution adapts to the business, whether that's an AI receptionist, enquiry handling, lead management or customer-service automation."
-  },
+    copy: "I look for the parts of the business that are costing time, losing enquiries or creating unnecessary friction. Then I design practical AI, automation and process improvements around those opportunities — making the business more responsive, efficient and easier to manage."
   {
     label: "ACHIEVE",
     heading: "Create measurable improvement",
-    copy: "I look for the parts of the business that are costing time, losing enquiries or creating unnecessary friction. Then I design practical AI, automation and process improvements around those opportunities — making the business more responsive, efficient and easier to manage."
+    copy: "The goal isn't technology for its own sake. It's faster responses, less repetitive administration, a more consistent customer experience and more time for you and your team to focus on the work that matters."
   }
 ];
 
