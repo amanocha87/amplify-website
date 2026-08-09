@@ -1,4 +1,5 @@
 import AmplifyMethod from '../components/AmplifyMethod';
+import ReactiveToProactive from '../components/ReactiveToProactive';
 import Hero from '../components/Hero';
 import CoreSolutions from '../components/CoreSolutions';
 import Testimonials from '../components/Testimonials';
@@ -9,8 +10,9 @@ export default function Home() {
   return (
 <>
   <Hero />
-  <AmplifyMethod />
-  <CoreSolutions />
+<AmplifyMethod />
+<ReactiveToProactive />
+<CoreSolutions />
   <Testimonials />
   <ReferralRewards />
   <FinalCTA />
