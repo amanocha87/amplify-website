@@ -80,7 +80,9 @@ export default function Navbar() {
           <Link to="/case-studies" className="hover:text-neutral-900 transition-colors">
             Case Studies
           </Link>
-
+          <Link to="/pricing" className="hover:text-neutral-900 transition-colors">
+            Pricing
+          </Link>
           <Link to="/about" className="hover:text-neutral-900 transition-colors">
             About
           </Link>
@@ -170,7 +172,14 @@ export default function Navbar() {
             >
               Case Studies
             </Link>
-
+            
+              <Link
+              to="/pricing"
+              onClick={closeMobileMenu}
+              className="px-3 py-3 rounded-lg hover:bg-neutral-50"
+            >
+              Pricing
+            </Link>
             <Link
               to="/about"
               onClick={closeMobileMenu}
