@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
+import PricingPage from './pages/PricingPage';
 import BusinessConsultancy from './pages/BusinessConsultancy';
 import CustomerEngagement from './pages/CustomerEngagement';
 import BusinessSystems from './pages/BusinessSystems';
@@ -30,6 +31,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/pricing" element={<PricingPage />} />
             <Route path="/services/business-consultancy" element={<BusinessConsultancy />} />
             <Route path="/services/customer-engagement" element={<CustomerEngagement />} />
             <Route path="/services/business-systems" element={<BusinessSystems />} />
