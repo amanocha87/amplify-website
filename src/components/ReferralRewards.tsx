@@ -13,6 +13,7 @@ export default function ReferralRewards() {
         </h2>
         <p className="text-lg md:text-xl text-neutral-600 leading-relaxed mb-8 max-w-2xl mx-auto">
          Know a business that could benefit from better process, systems, AI or automation? Introduce us, and if we work together, you both get rewarded.
+          </p>
         <Link 
   to="/referral-rewards"
           className="inline-flex items-center gap-2 text-purple-900 font-semibold hover:text-purple-700 transition-colors text-lg"
