@@ -6,8 +6,9 @@ const steps = [
   },
   {
     label: "ADAPT",
-    heading: "Turn gaps into better ways of working",
-    copy: "I look for the parts of the business that are costing time, losing enquiries or creating unnecessary friction. Then I design practical AI, automation and process improvements around those opportunities — making the business more responsive, efficient and easier to manage."
+heading: "Turn gaps into better ways of working",
+   copy: "I look for the parts of the business that are costing time, losing enquiries or creating unnecessary friction. Then I design practical AI, automation and process improvements around those opportunities — making the business more responsive, efficient and easier to manage."
+  },
   {
     label: "ACHIEVE",
     heading: "Create measurable improvement",
