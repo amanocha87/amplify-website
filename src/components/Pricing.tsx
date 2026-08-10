@@ -102,10 +102,32 @@ export default function Pricing() {
         Business Systems Audits are paid in advance. Project work is paid in two stages: 50% to begin, 50% before final delivery.
       </p>
 
-      <div className="max-w-3xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 mb-4">
+    <div className="max-w-3xl mx-auto text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 mb-6">
           Popular Packages for SMEs &amp; Trades
         </h2>
+        <div className="flex flex-col gap-3 items-start max-w-md mx-auto text-left mb-6">
+          <div className="flex items-start gap-3">
+            <span className="text-purple-900 font-semibold">✓</span>
+            <span className="text-neutral-700">Stop losing jobs because of missed calls</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-purple-900 font-semibold">✓</span>
+            <span className="text-neutral-700">Turn website visitors into booked jobs, 24/7</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-purple-900 font-semibold">✓</span>
+            <span className="text-neutral-700">Spend less time on admin, more time on site</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-purple-900 font-semibold">✓</span>
+            <span className="text-neutral-700">An AI that works like an extra office assistant — without the salary</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="text-purple-900 font-semibold">✓</span>
+            <span className="text-neutral-700">Get up and running in weeks, while others are still deciding</span>
+          </div>
+        </div>
         <p className="text-lg text-neutral-600 leading-relaxed">
           Fixed starting points for common needs, so you know roughly what to expect.
         </p>
