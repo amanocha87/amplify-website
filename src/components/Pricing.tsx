@@ -22,7 +22,7 @@ const journey = [
 const packages = [
   {
     title: "AI Readiness + First AI Agent",
-    description: "Everything in your Business Systems Audit, plus your first single-channel AI agent — a Trade Enquiry Assistant, SME Customer Engagement Package, AI Receptionist & Lead Qualification, or a simple automation. Includes 90 days of free support. Delivered in 2-3 weeks. Optional monthly retainer available afterward.",
+  description: "Everything in your Business Systems Audit, plus your choice of one single-channel AI agent: a Trade Enquiry Assistant, SME Customer Engagement Package, AI Receptionist & Lead Qualification, or a custom automation. Includes 90 days of free support. Delivered in 2-3 weeks. Optional monthly retainer available afterward.",
     price: "£1,250"
   },
   {
