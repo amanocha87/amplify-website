@@ -2,7 +2,7 @@ const plans = [
   {
     label: "ACCESS",
     title: "Free Business Review",
-    description: "A free 30-minute conversation to understand your business and where automation could genuinely help.",
+    description: "A free 30-minute conversation to understand your business and where we can genuinely help — whether that's better systems, process improvements, your website, or automation.",
     price: "Free"
   },
   {
