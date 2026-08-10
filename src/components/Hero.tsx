@@ -61,7 +61,7 @@ export default function Hero() {
           className="max-w-2xl"
         >
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-purple-700">
-            Business First. Technology Second. Results Always.
+            Business Strategy, Human Expertise, AI Execution — all aligned to one goal: your results.
           </p>
 
           <h1 className="mb-6 text-5xl font-semibold leading-[1.02] tracking-tight text-neutral-950 sm:text-6xl lg:text-[4.6rem]">
