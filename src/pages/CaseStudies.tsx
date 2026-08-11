@@ -35,22 +35,27 @@ export default function CaseStudies() {
             viewport={{ once: true }}
           >
             <span className="text-sm font-semibold tracking-widest uppercase text-purple-900">
-              Case Study 01 · AI Business Advisor
+              Case Study 01 · Amplify's Own AI Business Advisor
             </span>
 
             <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-tight text-neutral-900">
-            Turning website conversations into qualified business opportunities.
+            Freeing up 10-12 hours a week to focus on client work, not enquiries.
             </h2>
 
             <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
-              We developed an AI Business Advisor designed to do more than
-              simply answer questions. It can understand what a customer is
-              trying to achieve, identify relevant needs and guide the
-              conversation towards an appropriate next step.
+              We built our own AI Business Advisor — and use it ourselves.
+              Rather than personally qualifying every enquiry that comes
+              through, it understands what a visitor is trying to achieve,
+              identifies their needs, and guides the conversation toward a
+              clear next step, before it ever reaches Aman directly.
             </p>
 
-            <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-              The AI Business Advisor can be adapted around different industries, services and customer journeys — supporting sales enquiries, customer service, lead qualification, appointment journeys and business support while using each organisation’s own knowledge, processes and tone of voice.
+            <div className="mt-6 inline-block bg-purple-100 text-purple-900 font-semibold text-lg rounded-2xl px-6 py-4">
+              10-12 hours saved per week
+            </div>
+
+            <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
+              The same AI Business Advisor can be adapted around different industries, services and customer journeys — supporting sales enquiries, customer service, lead qualification, appointment journeys and business support, using each organisation's own knowledge, processes and tone of voice.
             </p>
 
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
@@ -157,9 +162,24 @@ export default function CaseStudies() {
               Incoming enquiries are assessed and categorised as Hot, Warm or Cold based on their level of interest and intent. The workflow then triggers the appropriate email response and next action, helping the sales team prioritise high-intent opportunities while ensuring warm and colder leads continue to receive relevant follow-up.
             </p>
 
-            <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-             The result is a more structured sales process: faster and more consistent follow-up, clearer lead prioritisation and less repetitive administration — while keeping the sales team in control of the conversations and opportunities that need a human touch.
+           <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
+              The result: every enquiry now gets an instant response, with the sales team engaging within 15 minutes of it landing. That faster, more consistent follow-up has helped increase sales by 34% and led to a noticeable rise in positive customer reviews — while keeping the sales team in control of the conversations that need a human touch.
             </p>
+
+            <div className="mt-6 grid grid-cols-3 gap-4">
+              <div className="text-center">
+                <span className="block text-2xl font-semibold text-purple-900">34%</span>
+                <span className="text-sm text-neutral-500">Increase in sales</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-2xl font-semibold text-purple-900">100%</span>
+                <span className="text-sm text-neutral-500">Enquiries answered instantly</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-2xl font-semibold text-purple-900">15 min</span>
+                <span className="text-sm text-neutral-500">Avg. sales engagement time</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
