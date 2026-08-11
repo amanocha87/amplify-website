@@ -6,7 +6,6 @@ import {
   User,
   Sparkles,
   Clock,
-  MessageCircle
 } from 'lucide-react';
 import { supabase } from './lib/supabase';
 
@@ -336,13 +335,18 @@ export default function AIBusinessAdvisor() {
 
   return (
     <>
-      <button
+     <button
         onClick={() => setIsOpen(true)}
         aria-label="Open AI Business Advisor chat"
-        className="fixed bottom-6 right-6 z-40 bg-neutral-900 hover:bg-purple-900 transition-colors rounded-full p-4 shadow-xl"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 bg-white border border-purple-200 hover:border-purple-400 transition-colors rounded-full pl-4 pr-5 py-3 shadow-xl"
       >
-        <MessageCircle className="w-6 h-6 text-white" />
-      </button>
+        <span className="relative flex h-2.5 w-2.5">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-700 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-purple-700"></span>
+        </span>
+        <Bot className="w-5 h-5 text-purple-900" />
+        <span className="font-semibold text-purple-900 text-sm">AI Business Advisor</span>
+      </button>>
       <BusinessAdvisorModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );
