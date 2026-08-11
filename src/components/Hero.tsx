@@ -96,13 +96,14 @@ export default function Hero() {
               Book Your Free Business Review
             </Link>
 
-            <Link
-              to="/contact"
+           <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('open-ai-advisor'))}
               className="flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-7 py-3.5 font-medium text-neutral-900 transition hover:bg-neutral-50"
             >
-              Speak With Our AI Consultant
+              Speak With Our AI Business Advisor
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </button>
           </div>
 
           <div className="inline-flex max-w-xl items-center rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2">
