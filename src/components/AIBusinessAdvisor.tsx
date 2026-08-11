@@ -328,6 +328,12 @@ function BusinessAdvisorModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
 export default function AIBusinessAdvisor() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    const openHandler = () => setIsOpen(true);
+    window.addEventListener('open-ai-advisor', openHandler);
+    return () => window.removeEventListener('open-ai-advisor', openHandler);
+  }, []);
+
   return (
     <>
       <button
