@@ -11,6 +11,7 @@ import Solutions from './pages/Solutions';
 import Industries from './pages/Industries';
 import IndustryDetail from './pages/IndustryDetail';
 import Insights from './pages/Insights';
+import InsightArticle from './components/InsightArticle';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import CookiePolicy from './pages/CookiePolicy';
 import TermsConditions from './pages/TermsConditions';
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="/industries" element={<Industries />} />
             <Route path="/industries/:id" element={<IndustryDetail />} />
             <Route path="/insights" element={<Insights />} />
+            <Route path="/insights/:slug" element={<InsightArticle />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/terms" element={<TermsConditions />} />
