@@ -14,10 +14,14 @@ export default function CaseStudies() {
             Practical solutions built around real business problems.
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-neutral-600 max-w-3xl leading-relaxed">
+         <p className="mt-6 text-lg md:text-xl text-neutral-600 max-w-3xl leading-relaxed">
             From intelligent customer conversations to automated sales
             workflows, Amplify combines business experience with practical AI
             and automation to improve the way businesses operate.
+          </p>
+
+          <p className="mt-4 text-sm text-neutral-500">
+            Client details anonymised for confidentiality.
           </p>
         </div>
       </section>
