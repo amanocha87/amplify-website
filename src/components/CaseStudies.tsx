@@ -21,7 +21,7 @@ export default function CaseStudies() {
     <section className="py-20 md:py-24 px-6 max-w-[1400px] mx-auto bg-white border-t border-neutral-100">
       <div className="mb-16 max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 mb-6 leading-tight">
-          Real Business Improvements
+         TEST 123 Real Business Improvements
         </h2>
         <p className="text-xl md:text-2xl text-neutral-600 leading-relaxed font-light">
           We focus on measurable outcomes. Explore how our consultancy and technology solutions create genuine impact.
