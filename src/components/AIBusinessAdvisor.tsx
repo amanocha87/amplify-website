@@ -346,7 +346,7 @@ export default function AIBusinessAdvisor() {
         </span>
         <Bot className="w-5 h-5 text-purple-900" />
         <span className="font-semibold text-purple-900 text-sm">AI Business Advisor</span>
-      </button>>
+      </button>
       <BusinessAdvisorModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );
