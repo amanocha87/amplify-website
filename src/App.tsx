@@ -20,6 +20,7 @@ import Contact from './pages/Contact';
 import ReferralProgram from './pages/ReferralProgram';
 import CaseStudies from './pages/CaseStudies';
 import Footer from './components/Footer';
+import AIBusinessAdvisor from './components/AIBusinessAdvisor';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -52,6 +53,7 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
+        <AIBusinessAdvisor />
       </div>
     </Router>
   );
