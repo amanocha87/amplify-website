@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 const journey = [
   {
     label: "ACCESS",
@@ -22,18 +24,21 @@ const journey = [
 const packages = [
   {
     title: "AI Readiness + First AI Agent",
-  description: "Everything in your Business Systems Audit, plus your choice of one single-channel AI agent: a Trade Enquiry Assistant, SME Customer Engagement Package, AI Receptionist & Lead Qualification, or a custom automation. Includes 90 days of free support. Delivered in 2-3 weeks. Optional monthly retainer available afterward.",
-    price: "£1,250"
+    description: "Everything in your Business Systems Audit, plus your choice of one single-channel AI agent: a Trade Enquiry Assistant, SME Customer Engagement Package, AI Receptionist & Lead Qualification, or a custom automation. Includes 90 days of free support. Delivered in 2-3 weeks. Optional monthly retainer available afterward.",
+    price: "£1,250",
+    featured: false
   },
   {
     title: "Multi-Channel AI Agents",
     description: "One consistent AI agent deployed across up to 3 channels of your choice (e.g. phone, WhatsApp, web chat), with enquiry capture, lead qualification and CRM updates handled the same way regardless of channel. Includes 90 days of free support. Delivered in 2-3 weeks.",
-    price: "£2,000"
+    price: "£2,000",
+    featured: true
   },
   {
     title: "SME & Trade Growth Package",
     description: "3-5 multi-channel AI automations across sales, operations and customer service. Includes 180 days of free support and staff training for up to 9 team members. Optional monthly retainer available afterward.",
-    price: "£5,000"
+    price: "£5,000",
+    featured: false
   }
 ];
 
@@ -76,7 +81,10 @@ const websiteServices = [
 export default function Pricing() {
   return (
     <section className="py-24 md:py-32 px-6 max-w-[1400px] mx-auto bg-neutral-50 border-t border-neutral-100">
-      <div className="mb-20 max-w-3xl mx-auto text-center">
+      <div className="relative overflow-hidden mb-20 max-w-3xl mx-auto text-center">
+        <div className="absolute -top-10 -right-10 w-64 h-64 opacity-[0.06] pointer-events-none hidden md:block">
+          <Logo variant="small" className="w-full h-full" />
+        </div>
         <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 mb-6 leading-tight">
           Clear, Transparent Pricing
         </h2>
@@ -102,7 +110,7 @@ export default function Pricing() {
         Business Systems Audits are paid in advance. Project work is paid in two stages: 50% to begin, 50% before final delivery.
       </p>
 
-    <div className="max-w-3xl mx-auto text-center mb-12">
+      <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 mb-6">
           Popular Packages for SMEs &amp; Trades
         </h2>
@@ -135,36 +143,56 @@ export default function Pricing() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24">
         {packages.map((pkg, index) => (
-          <div key={index} className="bg-white rounded-3xl p-8 border border-neutral-200 flex flex-col h-full">
-            <h3 className="text-xl font-semibold text-neutral-900 tracking-tight mb-2">{pkg.title}</h3>
-            <p className="text-2xl font-semibold text-neutral-900 mb-4">{pkg.price}</p>
-            <p className="text-neutral-600 leading-relaxed">{pkg.description}</p>
+          <div
+            key={index}
+            className={`relative rounded-3xl p-8 flex flex-col h-full ${
+              pkg.featured
+                ? 'bg-neutral-900 border-2 border-purple-700'
+                : 'bg-white border border-neutral-200'
+            }`}
+          >
+            {pkg.featured && (
+              <span className="absolute -top-3 left-8 bg-purple-700 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">
+                Most Popular
+              </span>
+            )}
+            <h3 className={`text-xl font-semibold tracking-tight mb-2 ${pkg.featured ? 'text-white' : 'text-neutral-900'}`}>
+              {pkg.title}
+            </h3>
+            <p className={`text-2xl font-semibold mb-4 ${pkg.featured ? 'text-white' : 'text-neutral-900'}`}>
+              {pkg.price}
+            </p>
+            <p className={`leading-relaxed ${pkg.featured ? 'text-neutral-300' : 'text-neutral-600'}`}>
+              {pkg.description}
+            </p>
           </div>
         ))}
       </div>
 
-      <div className="max-w-3xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 mb-4">
-          Ongoing Support
-        </h2>
-        <p className="text-lg text-neutral-600 leading-relaxed">
-          Optional monthly plans to keep your systems running and growing after delivery.
+      <div className="bg-neutral-900 rounded-[2rem] p-10 md:p-16 mb-24">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">
+            Ongoing Support
+          </h2>
+          <p className="text-lg text-neutral-400 leading-relaxed">
+            Optional monthly plans to keep your systems running and growing after delivery.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-6">
+          {retainers.map((tier, index) => (
+            <div key={index} className="bg-neutral-800 rounded-3xl p-8 border border-neutral-700 flex flex-col h-full">
+              <h3 className="text-xl font-semibold text-white tracking-tight mb-2">{tier.title}</h3>
+              <p className="text-2xl font-semibold text-white mb-4">{tier.price}</p>
+              <p className="text-neutral-400 leading-relaxed">{tier.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center text-sm text-neutral-500 max-w-2xl mx-auto">
+          Ongoing AI and platform subscription costs (e.g. OpenAI, WhatsApp Business API) are billed separately, based on actual usage, and are not included in retainer pricing.
         </p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-6">
-        {retainers.map((tier, index) => (
-          <div key={index} className="bg-white rounded-3xl p-8 border border-neutral-200 flex flex-col h-full">
-            <h3 className="text-xl font-semibold text-neutral-900 tracking-tight mb-2">{tier.title}</h3>
-            <p className="text-2xl font-semibold text-neutral-900 mb-4">{tier.price}</p>
-            <p className="text-neutral-600 leading-relaxed">{tier.description}</p>
-          </div>
-        ))}
-      </div>
-
-      <p className="text-center text-sm text-neutral-500 max-w-2xl mx-auto mb-24">
-        Ongoing AI and platform subscription costs (e.g. OpenAI, WhatsApp Business API) are billed separately, based on actual usage, and are not included in retainer pricing.
-      </p>
 
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 mb-4">
