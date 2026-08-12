@@ -4,7 +4,7 @@ export default function Strategy() {
       <div className="max-w-4xl mx-auto">
         <div className="p-8 md:p-12 bg-neutral-50 rounded-3xl border border-neutral-100 mb-16 text-center">
           <p className="text-2xl md:text-4xl font-medium text-neutral-900 leading-snug">
-            "Technology should follow strategy , not replace it."
+            "Technology should follow strategy ,not replace it."
           </p>
         </div>
         
