@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" onClick={closeMobileMenu}>
-          <Logo className="h-18 w-auto" />
+          <Logo className="h-22 w-auto" />
         </Link>
 
         {/* Desktop navigation */}
