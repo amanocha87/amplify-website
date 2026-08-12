@@ -60,21 +60,21 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="max-w-2xl"
         >
-          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-purple-700">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-purple-700">
             Business Strategy, Human Expertise, AI Execution — all aligned to one goal: your results.
           </p>
 
-          <h1 className="mb-6 text-5xl font-semibold leading-[1.02] tracking-tight text-neutral-950 sm:text-6xl lg:text-[4.6rem]">
+          <h1 className="mb-4 text-5xl font-semibold leading-[1.02] tracking-tight text-neutral-950 sm:text-6xl lg:text-[3.6rem]">
             Helping Businesses Work Smarter and Grow Faster.
           </h1>
 
-          <p className="mb-7 max-w-xl text-lg leading-relaxed text-neutral-600 md:text-xl">
+          <p className="mb-5 max-w-xl text-lg leading-relaxed text-neutral-600 md:text-xl">
             Helping ambitious businesses simplify operations, improve customer
             experience and grow through practical consultancy, AI and smarter
             systems.
           </p>
 
-          <div className="mb-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="mb-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {benefits.map((benefit) => (
               <div
                 key={benefit}
@@ -88,7 +88,7 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="mb-7 flex flex-col gap-3 sm:flex-row">
+          <div className="mb-4 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/contact"
               className="rounded-full bg-neutral-950 px-7 py-3.5 text-center font-medium text-white transition hover:bg-neutral-800"
