@@ -45,7 +45,7 @@ const packages = [
 const retainers = [
   {
     title: "Maintain",
-    price: "From £150/month",
+    price: "£150/month",
     bullets: [
       "Uptime monitoring & error alerts",
       "Up to 2 hours of tweaks/fixes per month",
@@ -54,7 +54,7 @@ const retainers = [
   },
   {
     title: "Grow",
-    price: "From £350/month",
+    price: "£350/month",
     bullets: [
       "Everything in Maintain",
       "Up to 5 hours of tweaks/fixes per month",
@@ -65,7 +65,7 @@ const retainers = [
   },
   {
     title: "Partner",
-    price: "From £750/month",
+    price: "£750/month",
     bullets: [
       "Everything in Grow",
       "Up to 10 hours of work per month",
