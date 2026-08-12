@@ -64,17 +64,17 @@ const websiteServices = [
   {
     title: "Website Refresh",
     description: "Updating, fixing, or improving your existing website — new copy, fixed broken elements, added pages.",
-    price: "£400-£800"
+    price: "£500-£1,000"
   },
   {
-    title: "New Simple Website",
-    description: "A 5-8 page brochure-style website, built to represent your business professionally online.",
-    price: "£800-£1,500"
+    title: "Essential Website",
+    description: "An up to 5-page brochure-style website, built to represent your business professionally online.",
+    price: "£1,000-£2,000"
   },
   {
-    title: "Custom/Complex Website",
-    description: "A fully coded website with automation, booking systems, or other custom functionality built in.",
-    price: "£1,500-£3,000"
+    title: "Advanced Website",
+    description: "A fully coded website with automation, booking systems, or other custom functionality built in. Optional payment integration (e.g. Stripe) available.",
+    price: "£2,000-£3,500"
   }
 ];
 
