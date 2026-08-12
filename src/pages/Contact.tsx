@@ -88,7 +88,7 @@ export default function Contact() {
                 <div>
                   <p className="font-medium text-neutral-900 mb-1">Service Area</p>
                   <p className="mb-2">
-                    Leicester, Loughborough, Hinckley, Market Harborough, Melton Mowbray, Birmingham, Coventry, Nottingham, Derby and Northampton.
+                    Leicester, Loughborough, Hinckley, Market Harborough, Melton Mowbray, Birmingham, Coventry, Nottingham, Derby, Northampton, Warwick, Peterborough and Rugby.
                   </p>
                   <p className="text-sm">
                     <em>Also supporting businesses across the UK remotely.</em>
@@ -106,8 +106,16 @@ export default function Contact() {
                 <span className="font-medium text-neutral-900">9:00 AM - 5:30 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Saturday - Sunday</span>
+                <span>Saturday</span>
+                <span className="font-medium text-neutral-900">9:30 AM - 1:30 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Sunday</span>
                 <span className="font-medium text-neutral-900">Closed</span>
+              </div>
+              <div className="flex justify-between pt-2 border-t border-neutral-100 mt-2">
+                <span>AI Business Advisor</span>
+                <span className="font-medium text-purple-900">24/7</span>
               </div>
             </div>
           </div>
@@ -182,7 +190,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="automate_target" className="block text-sm font-medium text-neutral-700 mb-2">What would you like to automate? *</label>
+                <label htmlFor="automate_target" className="block text-sm font-medium text-neutral-700 mb-2">How can Amplify help? *</label>
                 <select
                   id="automate_target"
                   required
@@ -191,16 +199,19 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-purple-900 focus:border-transparent transition-shadow bg-white"
                 >
                   <option value="" disabled>Select an option</option>
+                  <option value="Business Consultancy">Business Consultancy</option>
                   <option value="AI Business Automation">AI Business Automation</option>
                   <option value="Customer Service">Customer Service</option>
                   <option value="Sales & Marketing">Sales & Marketing</option>
                   <option value="Admin & Operations">Admin & Operations</option>
+                  <option value="Website Refresh">Website Refresh</option>
+                  <option value="New Website Build">New Website Build</option>
                   <option value="Not sure yet">Not sure yet</option>
                 </select>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-2">Briefly describe your repetitive tasks or workflow *</label>
+                <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-2">Tell us a bit about what you need *</label>
                 <textarea
                   id="message"
                   rows={4}
@@ -208,7 +219,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-purple-900 focus:border-transparent transition-shadow resize-none"
-                  placeholder="e.g. I spend hours a day manually entering customer enquiries into our system..."
+                  placeholder="e.g. I need help streamlining how we handle customer enquiries, or I'm looking to refresh our website..."
                 ></textarea>
               </div>
 
