@@ -45,21 +45,37 @@ const packages = [
 const retainers = [
   {
     title: "Maintain",
-    description: "Regular monitoring, uptime checks, and minor tweaks to keep everything running smoothly.",
-    price: "From £150/month"
+    price: "From £150/month",
+    bullets: [
+      "Uptime monitoring & error alerts",
+      "Up to 2 hours of tweaks/fixes per month",
+      "Email support, 48-hour response time"
+    ]
   },
   {
     title: "Grow",
-    description: "Maintain, plus regular optimisation, added automations over time, and monthly reporting.",
-    price: "From £350/month"
+    price: "From £350/month",
+    bullets: [
+      "Everything in Maintain",
+      "Up to 5 hours of tweaks/fixes per month",
+      "Monthly reports, with a deeper quarterly review",
+      "New automation or improvement added as needed, based on quarterly review",
+      "Priority support, 24-hour response time"
+    ]
   },
   {
     title: "Partner",
-    description: "Grow, plus priority support and an ongoing strategic partnership focused on continuous improvement.",
-    price: "From £750/month"
+    price: "From £750/month",
+    bullets: [
+      "Everything in Grow",
+      "Up to 10 hours of work per month",
+      "Training for new staff or new automations",
+      "Dedicated monthly strategy call",
+      "Same-day priority support",
+      "Ongoing roadmap planning for continuous improvement"
+    ]
   }
 ];
-
 const websiteServices = [
   {
     title: "Website Refresh",
@@ -180,11 +196,18 @@ export default function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-6">
-          {retainers.map((tier, index) => (
+         {retainers.map((tier, index) => (
             <div key={index} className="bg-neutral-800 rounded-3xl p-8 border border-neutral-700 flex flex-col h-full">
               <h3 className="text-xl font-semibold text-white tracking-tight mb-2">{tier.title}</h3>
               <p className="text-2xl font-semibold text-white mb-4">{tier.price}</p>
-              <p className="text-neutral-400 leading-relaxed">{tier.description}</p>
+              <ul className="space-y-2">
+                {tier.bullets.map((bullet, i) => (
+                  <li key={i} className="flex items-start gap-2 text-neutral-400 leading-relaxed text-sm">
+                    <span className="text-purple-400 font-semibold mt-0.5">✓</span>
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
