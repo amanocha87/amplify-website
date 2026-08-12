@@ -46,7 +46,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-white pt-28 pb-14 md:pt-32 md:pb-20">
+   <section className="relative overflow-hidden bg-white pt-20 pb-10 md:pt-24 md:pb-14">
       {/* Very subtle brand atmosphere */}
       <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl" />
       <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-purple-100/30 blur-3xl" />
@@ -123,7 +123,7 @@ export default function Hero() {
         >
           <div className="absolute -inset-5 rounded-[2.5rem] bg-purple-100/60 blur-3xl" />
 
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-neutral-200 shadow-2xl shadow-neutral-300/40 lg:aspect-[5/4]">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-neutral-200 shadow-2xl shadow-neutral-300/40 lg:aspect-[4/3]">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentImageIndex}
