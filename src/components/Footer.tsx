@@ -61,9 +61,8 @@ export default function Footer() {
             <h4 className="font-semibold mb-6 text-neutral-900 tracking-wider text-sm uppercase">Contact</h4>
             <div className="flex flex-wrap items-center gap-6 text-sm text-neutral-600">
                 <Link to="/contact" className="hover:text-purple-900 transition-colors font-semibold text-neutral-900">Book Your Free Business Review</Link>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-900 transition-colors">LinkedIn</a>
-                <a href="mailto:hello@amplify.co.uk" className="hover:text-purple-900 transition-colors">Email</a>
-                <a href="tel:000000000" className="hover:text-purple-900 transition-colors">Phone</a>
+               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-900 transition-colors">LinkedIn</a>
+                <a href="mailto:contact@amplifyaiagents.com" className="hover:text-purple-900 transition-colors">Email</a>
             </div>
         </div>
 
