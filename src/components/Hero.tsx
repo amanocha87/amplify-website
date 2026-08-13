@@ -6,17 +6,17 @@ import { useEffect, useState } from 'react';
 import imgConsultancy from '../assets/images/business_strategy_collaboration_1785964311144.jpg';
 import imgTeam from '../assets/images/human_centred_collaboration_1785961258436.jpg';
 import imgCustomer from '../assets/images/premium_car_dealership_1785884612958.jpg';
-import imgAI from '../assets/images/premium_furniture_showroom_1785885189959.jpg';
+import imgTrades from '../assets/images/professional_electrician_1785884977999.jpg';
 import imgGrowth from '../assets/images/estate_agency_v3_1785885823027.jpg';
-import imgProfessional from '../assets/images/busy_restaurant_1785884822125.jpg';
+import imgSalon from '../assets/images/premium_salon_v2_1785885921299.jpg';
 
 const heroImages = [
   { url: imgConsultancy, alt: 'Business consultancy session' },
   { url: imgTeam, alt: 'Team collaboration in a modern office' },
   { url: imgCustomer, alt: 'Customer engagement at a car dealership' },
-  { url: imgAI, alt: 'Premium retail showroom' },
+  { url: imgTrades, alt: 'Tradesperson capturing job details on-site' },
   { url: imgGrowth, alt: 'Estate agency customer experience' },
-  { url: imgProfessional, alt: 'Professional hospitality environment' },
+  { url: imgSalon, alt: 'Hair and beauty salon client experience' },
 ];
 
 const benefits = [
