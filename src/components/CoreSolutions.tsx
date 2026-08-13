@@ -26,45 +26,36 @@ const coreSolutions = [
 
 export default function CoreSolutions() {
   return (
-    <section className="py-20 md:py-24 px-6 max-w-[1400px] mx-auto bg-neutral-50">
-      <div className="mb-24 max-w-3xl">
-        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 mb-6 leading-tight">
+    <section className="py-14 md:py-20 px-6 max-w-[1400px] mx-auto bg-neutral-50">
+      <div className="mb-10 max-w-3xl">
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-neutral-900 mb-4 leading-tight">
           How We Can Help
         </h2>
-        <p className="text-xl md:text-2xl text-neutral-600 leading-relaxed font-light">
-          Every business is different. We combine business experience, practical AI and digital systems to solve real business challenges and create measurable results.
+        <p className="text-base md:text-xl text-neutral-600 leading-relaxed">
+          Every business is different. We combine business experience, practical AI and digital systems to solve real business challenges.
         </p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
         {coreSolutions.map((solution, index) => (
-          <div 
+          <Link
             key={index}
-            className="bg-white rounded-3xl p-12 md:p-16 shadow-sm border border-neutral-100 flex flex-col h-full group transition-all duration-300 hover:shadow-md hover:border-neutral-200"
+            to={solution.link}
+            className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-neutral-100 flex items-center justify-between group transition-all duration-300 hover:shadow-md hover:border-neutral-200"
           >
-            <h3 className="text-3xl md:text-4xl font-semibold text-neutral-900 tracking-tight leading-snug mb-8">
-              {solution.title}
-            </h3>
-            
-            <div className="text-neutral-600 text-xl leading-relaxed mb-16 flex-grow font-light">
-              <p>{solution.description}</p>
+            <div>
+              <h3 className="text-lg md:text-xl font-semibold text-neutral-900 tracking-tight mb-1">
+                {solution.title}
+              </h3>
+              <p className="text-neutral-600 text-sm leading-relaxed">
+                {solution.description}
+              </p>
             </div>
-            
-            <div className="mt-auto pt-8 border-t border-neutral-100">
-              <Link 
-                to={solution.link}
-                className="inline-flex items-center gap-2 text-lg font-medium text-neutral-900 hover:text-purple-700 transition-colors group/link"
-              >
-                Learn More
-                <ArrowRight className="w-5 h-5 transition-transform group-hover/link:translate-x-1" />
-              </Link>
-            </div>
-          </div>
+            <ArrowRight className="w-5 h-5 shrink-0 ml-4 text-neutral-400 transition-transform group-hover:translate-x-1 group-hover:text-purple-700" />
+          </Link>
         ))}
       </div>
-
       <div className="text-center md:text-left">
-        <Link 
+        <Link
           to="/solutions"
           className="inline-flex items-center gap-2 text-lg font-medium text-neutral-900 hover:text-purple-700 transition-colors group"
         >
