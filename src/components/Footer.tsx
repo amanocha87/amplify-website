@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3B2A5C] text-purple-50 pt-14 pb-8 px-6">
+    <footer className="bg-purple-800 text-purple-100 pt-14 pb-8 px-6">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-12">
           <div className="col-span-1 lg:col-span-2">
