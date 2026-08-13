@@ -3,28 +3,31 @@ import { motion } from 'motion/react';
 export default function CaseStudies() {
   return (
     <main className="pt-24">
-      {/* HERO */}
-      <section className="px-6 py-20 md:py-28 bg-neutral-50">
-        <div className="max-w-6xl mx-auto">
-          <span className="text-sm font-semibold tracking-widest uppercase text-purple-900">
-            Solutions in Action
-          </span>
+<section className="px-6 py-20 md:py-28 bg-neutral-50">
+  <div className="max-w-6xl mx-auto">
+    <span className="text-sm font-semibold tracking-widest uppercase text-purple-900">
+      Solutions in Action
+    </span>
 
-          <h1 className="mt-5 text-4xl md:text-6xl font-semibold tracking-tight text-neutral-900 max-w-4xl">
-            Practical solutions built around real business problems.
-          </h1>
+    <h1 className="mt-5 text-4xl md:text-6xl font-semibold tracking-tight text-neutral-900 max-w-4xl">
+      Practical solutions built around real business problems.
+    </h1>
 
-         <p className="mt-6 text-lg md:text-xl text-neutral-600 max-w-3xl leading-relaxed">
-            From intelligent customer conversations to automated sales
-            workflows, Amplify combines business experience with practical AI
-            and automation to improve the way businesses operate.
-          </p>
+   <p className="mt-6 text-lg md:text-xl text-neutral-600 max-w-3xl leading-relaxed">
+      From intelligent customer conversations to automated sales
+      workflows, Amplify combines business experience with practical AI
+      and automation to improve the way businesses operate.
+    </p>
 
-          <p className="mt-4 text-sm text-neutral-500">
-            Client details anonymised for confidentiality.
-          </p>
-        </div>
-      </section>
+    <p className="mt-4 text-sm text-neutral-500">
+      Client details anonymised for confidentiality.
+    </p>
+
+    <p className="mt-6 text-base text-neutral-600 border-l-2 border-purple-200 pl-4 max-w-2xl">
+      Client testimonials are on their way — in the meantime, these case studies show real project details and outcomes.
+    </p>
+  </div>
+</section>
 
       {/* CASE STUDY 01 */}
       <section className="px-6 py-20 md:py-28">
