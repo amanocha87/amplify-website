@@ -86,9 +86,10 @@ function BusinessAdvisorModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
   const [completionReason, setCompletionReason] = useState<string | null>(null);
 
   const chatEndRef = useRef<HTMLDivElement>(null);
-  const conversationIdRef = useRef<string>(crypto.randomUUID());
+const conversationIdRef = useRef<string>(crypto.randomUUID());
+const isSendingRef = useRef(false);
 
-  useEffect(() => {
+useEffect(() => {
     if (messages.length === 0) return;
 
     const saveConversation = async () => {
@@ -140,7 +141,8 @@ function BusinessAdvisorModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
   if (!isOpen) return null;
 
   const handleSend = async (textToSend?: string) => {
-  if (isTyping) return;
+  if (isSendingRef.current || isTyping) return;
+  isSendingRef.current = true;
   const text = (textToSend || inputValue).trim();
   if (!text) return;
     
@@ -180,9 +182,10 @@ function BusinessAdvisorModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
     } catch (err: any) {
       console.error('Error getting response from AI Advisor:', err);
       setError("We encountered a brief communication issue. Please try sending your message again.");
-    } finally {
-      setIsTyping(false);
-    }
+  } finally {
+  setIsTyping(false);
+  isSendingRef.current = false;
+}
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
