@@ -140,9 +140,10 @@ function BusinessAdvisorModal({ isOpen, onClose }: { isOpen: boolean; onClose: (
   if (!isOpen) return null;
 
   const handleSend = async (textToSend?: string) => {
-    const text = (textToSend || inputValue).trim();
-    if (!text) return;
-
+  if (isTyping) return;
+  const text = (textToSend || inputValue).trim();
+  if (!text) return;
+    
     setError(null);
     if (!textToSend) {
       setInputValue('');
