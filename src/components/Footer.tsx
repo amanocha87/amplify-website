@@ -53,7 +53,8 @@ export default function Footer() {
           <div className="flex flex-wrap items-center gap-5 text-sm text-white/90">
             <Link to="/contact" className="hover:text-purple-950 transition-colors font-semibold text-white">Book Your Free Business Review</Link>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-950 transition-colors">LinkedIn</a>
-            <a href="mailto:contact@amplifyaiagents.com" className="hover:text-purple-950 transition-colors">Email</a>
+          <a href="mailto:contact@amplifyaiagents.com" className="hover:text-purple-950 transition-colors">Email</a>
+          <a href="tel:07343081073" className="hover:text-purple-950 transition-colors">Call: 07343 081073</a>
           </div>
         </div>
 
