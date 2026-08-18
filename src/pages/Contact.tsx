@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MapPin, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, CheckCircle } from 'lucide-react';
 
 const WEBHOOK_URL = 'https://hook.eu1.make.com/ywzdrk2igsrci0f3gnivaiegrmwt915g';
 
@@ -82,8 +82,14 @@ export default function Contact() {
                   <a href="mailto:contact@amplifyaiagents.com" className="hover:text-purple-700 transition-colors">contact@amplifyaiagents.com</a>
                 </div>
               </div>
-
-              <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4">
+            <Phone className="w-6 h-6 text-purple-900 flex-shrink-0 mt-1" />
+              <div>
+                <p className="font-medium text-neutral-900 mb-1">Phone</p>
+                <a href="tel:07343081073" className="hover:text-purple-700 transition-colors">07343 081073</a>
+            </div>
+            </div>
+               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-purple-900 flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-medium text-neutral-900 mb-1">Service Area</p>
