@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-white/30 flex flex-col md:flex-row items-center justify-between gap-3 text-white/80 text-xs">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-            <span>&copy; 2026 Amplify. All rights reserved.</span>
+           <span>&copy; 2026 Amplify AI Agents. All rights reserved.</span>
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
