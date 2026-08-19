@@ -128,7 +128,7 @@ useEffect(() => {
           {
             id: 'welcome',
             sender: 'bot',
-            text: "Welcome to Amplify.\n\nI'm your Amplify AI Business Advisor.\n\nWould it be okay if I asked you a few quick questions so I can better understand your business and how we might be able to help?",
+            text: "Welcome to Amplify.\n\nI'm Sam,your Amplify AI Business Advisor.\n\nWould it be okay if I asked you a few quick questions so I can better understand your business and how we might be able to help?",
             timestamp: new Date()
           }
         ]);
@@ -206,7 +206,7 @@ useEffect(() => {
             </div>
             <div>
               <h2 className="text-base sm:text-lg font-extrabold text-neutral-900 tracking-tight leading-snug">
-                Amplify AI Business Advisor
+               Sam,Amplify AI Business Advisor
               </h2>
               <p className="text-xs font-semibold text-purple-900 uppercase tracking-wider">
                 Business-Led AI Automation
@@ -349,7 +349,7 @@ export default function AIBusinessAdvisor() {
           <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-purple-700"></span>
         </span>
         <Bot className="w-5 h-5 text-purple-900" />
-        <span className="font-semibold text-purple-900 text-sm">AI Business Advisor</span>
+        <span className="font-semibold text-purple-900 text-sm">Sam,AI Business Advisor</span>
       </button>
       <BusinessAdvisorModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
