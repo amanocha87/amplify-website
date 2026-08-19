@@ -36,7 +36,6 @@ export default function FinalCTA({
             {!hideSecondaryCta && (
               <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border border-neutral-700 text-white rounded-full font-medium hover:bg-neutral-800 transition-colors inline-flex items-center justify-center gap-2 text-base md:text-lg">
                 <Bot className="w-4 h-4 md:w-5 md:h-5" />
-                S<Bot className="w-4 h-4 md:w-5 md:h-5" />
                 Chat with Sam (AI Advisor)
               </button>
             )}
