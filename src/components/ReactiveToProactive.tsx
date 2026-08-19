@@ -7,7 +7,7 @@ export default function ReactiveToProactive() {
         </h2>
         <p className="text-base md:text-xl text-neutral-600 leading-relaxed">
           <span className="font-semibold text-neutral-900">
-            Amplify helps businesses move from reactive to proactive.
+            Amplify AI Agents helps businesses move from reactive to proactive.
           </span>{' '}
           We identify where opportunities are being missed, then use better
           processes, AI and automation to help you respond earlier and follow
