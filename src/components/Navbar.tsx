@@ -11,9 +11,15 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link to="/" onClick={closeMobileMenu}>
-          <Logo className="h-25 w-auto" />
-        </Link>
+        <Link
+        to="/"
+        onClick={() => {
+        closeMobileMenu();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        >
+      <Logo className="h-25 w-auto" />
+    </Link>
 
         {/* Desktop navigation */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-600">
