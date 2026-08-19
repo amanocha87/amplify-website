@@ -26,7 +26,7 @@ Business Experience.
           
           <div className="prose prose-lg text-neutral-600 mb-12">
               <p className="mb-4">
-I'm Aman, founder of Amplify. After nearly 20 years working across Marketing, Retail, Motor Trade, Commercial Sales and Telesales, I've learnt one thing: technology only creates value when it solves real business problems.
+I'm Aman, founder of Amplify AI Agents. After nearly 20 years working across Marketing, Retail, Motor Trade, Commercial Sales and Telesales, I've learnt one thing: technology only creates value when it solves real business problems.
 </p>
 
 <p className="mb-4">
