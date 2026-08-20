@@ -45,7 +45,7 @@ const outcomes = [
     category: "Retail & Showrooms",
     headline: "Give Every Customer Your Attention",
     copy: "AI and automation can respond to routine online and telephone enquiries while your sales team provides personal advice and creates a stronger buying experience.",
-    example: "A shopper asks online if a sofa is in stock in a specific size and fabric — Amplify checks and replies within seconds, qualifies the customer, and offers a showroom appointment or a home design visit for their convenience. This frees the sales floor to focus on customers in-store, with no need to employ a call centre for this job.",
+    example: "A shopper asks online if a sofa is available in a specific size and fabric — Amplify checks and replies within seconds, qualifies the customer, and offers a showroom appointment or a home design visit for their convenience. This frees the sales floor to focus on customers in-store, with no need to employ a call centre for this job.",
     image: premiumShowroom,
     link: "/industries/retail"
   },
