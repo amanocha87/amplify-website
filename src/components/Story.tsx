@@ -11,7 +11,6 @@ export default function Story() {
               src={founderImage} 
               alt="Portrait of Amplify's founder" 
               className="absolute inset-0 w-full h-full object-cover"
-              loading="lazy"
             />
           </div>
         </div>
