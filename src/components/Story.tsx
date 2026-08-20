@@ -5,12 +5,12 @@ export default function Story() {
   return (
     <section className="py-20 md:py-24 px-6 max-w-[1400px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-[35fr_65fr] gap-16 items-center">
-        <div className="order-2 lg:order-1 relative max-w-md mx-auto lg:mx-0">
-          <div className="w-full aspect-[4/5] rounded-3xl overflow-hidden bg-neutral-100 relative shadow-sm">
+        <div className="order-2 lg:order-1 max-w-md mx-auto lg:mx-0">
+          <div className="w-full rounded-3xl overflow-hidden bg-neutral-100 shadow-sm">
             <img 
               src={founderImage} 
               alt="Portrait of Amplify's founder" 
-              className="absolute inset-0 w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
